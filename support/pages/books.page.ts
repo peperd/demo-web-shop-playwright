@@ -1,14 +1,11 @@
-import { Page } from '@playwright/test';
-import {BasePage} from "./basePage.js";
-import {TopMenuUrl} from "../enums/topMenuUrls.js";
+import { Page } from "@playwright/test";
+import { BasePage } from "./basePage.js";
+import { TopMenuUrl } from "../enums/topMenuUrls.js";
 
 export class BooksPage extends BasePage {
-    protected readonly url: string;
-    constructor(page: Page) {
-        super(page);
-        this.url = `${this.baseUrl}${TopMenuUrl.Books}`;
-
-    }
-
-
+  protected readonly url: string;
+  constructor(page: Page) {
+    super(page);
+    this.url = `${this.baseUrl}${TopMenuUrl.Books}`;
+  }
 }
